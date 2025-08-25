@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { MenuIcon, XIcon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import HeroImg from '../../public/HeroImg.png'
+import HeroImg from '../assets/heroImg.png'
 
 const Hero = () => {
   const [isToggled, setIsToggled] = useState(false);
