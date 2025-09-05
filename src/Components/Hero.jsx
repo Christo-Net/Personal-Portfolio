@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { MenuIcon, XIcon } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import HeroImg from '../assets/heroImg.png'
 
@@ -95,10 +95,12 @@ const Hero = () => {
     }
   };
 
+  // const navItems = ["HOME", "ABOUT", "PROJECTS", "CONTACT"];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white">
       {/* Navigation */}
-      <div className='flex justify-between px-6 py-7 md:px-20 w-full'>
+      <div className='flex justify-between px-6 py-7 md:px-20 w-full items-center'>
         <motion.div 
           className='text-white text-xl md:text-2xl font-mono cursor-pointer'
           variants={logoVariants}
@@ -111,21 +113,60 @@ const Hero = () => {
 
         <div>
           <motion.ul 
-            className='list-none hidden md:flex gap-8 text-gray-400'
+            className='list-none hidden md:flex gap-8 text-gray-400 items-center'
             initial="hidden"
             animate="visible"
           >
-            {["HOME", "ABOUT", "PROJECTS", "CONTACT"].map((item, i) => (
+            
               <motion.li 
-                key={item}
-                custom={i}
                 variants={menuItemVariants}
                 whileHover="hover"
-                className='cursor-pointer transition-colors hover:text-white'
               >
-                {item}
+                <a 
+                  href="#home"
+                  className='cursor-pointer transition-colors hover:text-white'
+                >
+                  HOME
+                </a>
               </motion.li>
-            ))}
+              <motion.li 
+                variants={menuItemVariants}
+                whileHover="hover"
+              >
+                <a 
+                  href="#about"
+                  className='cursor-pointer transition-colors hover:text-white'
+                >
+                  ABOUT
+                </a>
+              </motion.li>
+              <motion.li 
+                variants={menuItemVariants}
+                whileHover="hover"
+              >
+                <a 
+                  href="#projects"
+                  className='cursor-pointer transition-colors hover:text-white'
+                >
+                  PROJECT
+                </a>
+              </motion.li>
+              <motion.li 
+                variants={menuItemVariants}
+                whileHover="hover"
+              >
+                  <a 
+                  href="#contact"
+                  className='cursor-pointer transition-colors hover:text-white'
+                >
+                  CONTACT
+                </a>
+              </motion.li>
+
+               
+               
+              
+          
           </motion.ul>
 
           <motion.button 
@@ -142,7 +183,7 @@ const Hero = () => {
                   exit={{ rotate: 90, opacity: 0 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <XIcon size={28} />
+                  <X size={28} />
                 </motion.div>
               ) : (
                 <motion.div
@@ -152,7 +193,7 @@ const Hero = () => {
                   exit={{ rotate: -90, opacity: 0 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <MenuIcon size={28} />
+                  <Menu size={28} />
                 </motion.div>
               )}
             </AnimatePresence>
@@ -168,25 +209,79 @@ const Hero = () => {
                 exit="hidden"
               >
                 <ul className='list-none flex flex-col items-center gap-6 text-gray-400 py-6'>
-                  {["HOME", "ABOUT", "PROJECTS", "CONTACT"].map((item, i) => (
                     <motion.li 
-                      key={item}
                       initial={{ opacity: 0, y: -10 }}
                       animate={{ 
                         opacity: 1, 
                         y: 0,
                         transition: {
-                          delay: i * 0.1,
                           duration: 0.3
                         }
                       }}
                       whileHover={{ color: "#ffffff" }}
                       className='cursor-pointer py-2 text-lg'
-                      onClick={() => setIsToggled(false)}
-                    >
-                      {item}
+                    ><a 
+                        href="#home"
+                        className='cursor-pointer transition-colors hover:text-white'
+                      >
+                        HOME
+                      </a>
                     </motion.li>
-                  ))}
+                    <motion.li 
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ 
+                        opacity: 1, 
+                        y: 0,
+                        transition: {
+                          duration: 0.3
+                        }
+                      }}
+                      whileHover={{ color: "#ffffff" }}
+                      className='cursor-pointer py-2 text-lg'
+                    >  <a 
+                      href="#about"
+                      className='cursor-pointer transition-colors hover:text-white'
+                    >
+                      ABOUT
+                    </a>
+                    </motion.li>
+                    <motion.li 
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ 
+                        opacity: 1, 
+                        y: 0,
+                        transition: {
+                          duration: 0.3
+                        }
+                      }}
+                      whileHover={{ color: "#ffffff" }}
+                      className='cursor-pointer py-2 text-lg'
+                    > <a 
+                      href="#projects"
+                      className='cursor-pointer transition-colors hover:text-white'
+                    >
+                      PROJECT
+                    </a>
+                    </motion.li>
+                    <motion.li 
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ 
+                        opacity: 1, 
+                        y: 0,
+                        transition: {
+                          duration: 0.3
+                        }
+                      }}
+                      whileHover={{ color: "#ffffff" }}
+                      className='cursor-pointer py-2 text-lg'
+                    ><a 
+                      href="#contact"
+                      className='cursor-pointer transition-colors hover:text-white'
+                    >
+                      CONTACT
+                    </a>
+                    </motion.li>
+
                 </ul>
               </motion.div>
             )}
@@ -195,7 +290,7 @@ const Hero = () => {
       </div>
 
       {/* Hero Content */}
-      <div className='flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-10 md:py-20'>
+      <div id='home' className='flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-10 md:py-20'>
         <div className='text-white md:w-1/2 mb-12 md:mb-0'>
           <h1 className='text-5xl md:text-6xl font-bold mb-2'>Hello<span className='text-sky-500'>.</span></h1>
           
@@ -228,7 +323,9 @@ const Hero = () => {
               whileHover={{ scale: 1.05, backgroundColor: "rgba(244, 108, 90, 0.1)" }}
               whileTap={{ scale: 0.95 }}
             >
+              <a href="#contact">
               Hire me!
+              </a>
             </motion.button>
           </div>
         </div>
@@ -249,9 +346,7 @@ const Hero = () => {
               <div className='w-full h-full rounded-full bg-gray-700 overflow-hidden border-4 border-gray-800'>
                 {/* Placeholder for profile image - replace with your image */}
                 <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-700 to-gray-800">
-                  <span className="font-bold text-sky-500">
-                    <img src={HeroImg} alt="Hero Image" />
-                  </span>
+                  <img src={HeroImg} alt="Hero Image" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
@@ -292,7 +387,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         .blinking-cursor {
           animation: blink 1s step-end infinite;
           margin-left: 2px;

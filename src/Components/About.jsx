@@ -13,7 +13,7 @@ import {
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 py-16">
+    <div id='about' className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 py-16">
       <div className='grid md:grid-cols-2 lg:grid-cols-2 p-10 md:p-20 text-white gap-10 md:gap-20'>
         {/* Services Section */}
         <div className='grid gap-10'>
@@ -56,15 +56,15 @@ const About = () => {
           <div className='grid gap-5'>
             <h1 className='text-4xl font-bold font-mono'>About Me</h1>
             <p className='text-gray-300 leading-7'>
-              I'm a passionate software developer with expertise in creating modern, responsive websites and applications. 
+                I'm Chris a passionate Front_End web Developer, with expertise in creating modern, responsive websites.
               With a focus on clean code and user experience, I bring ideas to life through thoughtful design and 
-              technical excellence. I enjoy solving complex problems and continuously learning new technologies 
+              technical excellence. I enjoy solving problems and continuously learning new technologies 
               to stay at the forefront of web development.
             </p>
           </div>
 
           {/* Stats Section */}
-          <div className='flex flex-wrap gap-8 mt-5'>
+          <div className='flex flex-wrap justify-center gap-8 mt-5'>
             <div className='text-center'>
               <h1 className='text-4xl font-bold text-sky-500'>6+</h1>
               <p className='text-gray-400 mt-2'>Completed Projects</p>
@@ -81,7 +81,7 @@ const About = () => {
             </div>
           </div>
 
-          {/* Social Media Section */}
+          {/* Social Media Section
           <div className='mt-10'>
             <h3 className='text-xl font-bold mb-5'>Connect With Me</h3>
             <div className='flex flex-wrap gap-5'>
@@ -140,7 +140,7 @@ const About = () => {
                 <FaWhatsapp />
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
