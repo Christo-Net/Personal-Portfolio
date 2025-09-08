@@ -290,7 +290,7 @@ const Hero = () => {
       </div>
 
       {/* Hero Content */}
-      <div id='home' className='flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-10 md:py-20'>
+      <div id='home' className='flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-10 md:py-20 gap-20'>
         <div className='text-white md:w-1/2 mb-12 md:mb-0'>
           <h1 className='text-5xl md:text-6xl font-bold mb-2'>Hello<span className='text-sky-500'>.</span></h1>
           
