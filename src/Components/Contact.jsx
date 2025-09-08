@@ -106,13 +106,13 @@ const Contact = () => {
             </div>
             <h3 className="text-xl font-semibold mt-8 mb-4">Connect with me</h3>
             <div className="flex gap-4">
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://github.com/Christo-Net" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
                 <FaGithub size={24} />
               </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/in/christopher-ifeanyichukwu-423a43367/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
                 <FaLinkedin size={24} />
               </a>
-              <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://x.com/Networklord1/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
                 <FaTwitter size={24} />
               </a>
             </div>
