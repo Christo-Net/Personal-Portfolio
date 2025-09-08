@@ -11,7 +11,7 @@ const Hero = () => {
   const [typingSpeed, setTypingSpeed] = useState(150);
 
   // Text for the typewriter effect
-  const texts = ['Web Hosting', 'Website Development', 'Superb Web Cloning'];
+  const texts = ['Web Hosting', 'Website Development', 'High design fidelity'];
 
   // Typewriter effect implementation
   useEffect(() => {

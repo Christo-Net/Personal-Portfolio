@@ -33,7 +33,7 @@ const About = () => {
               <FaClone />
             </div>
             <div>
-              <h3 className='text-xl font-bold mb-2'>Web Cloning</h3>
+              <h3 className='text-xl font-bold mb-2'>High design fidelity</h3>
               <p className='text-gray-400'>Recreating existing websites with precision and attention to detail.</p>
             </div>
             <span className='absolute -bottom-3 -left-2 w-4 h-4 bg-sky-500 rounded-full'></span>
