@@ -342,14 +342,16 @@ const Hero = () => {
             <div className='absolute inset-0 bg-gradient-to-br from-sky-500 to-purple-600 rounded-full blur-md opacity-70'></div>
             
             {/* Main image with circular mask */}
-            <div className='relative rounded-full p-1 bg-gradient-to-br from-sky-500 to-purple-600'>
-              <div className='w-full h-full rounded-full bg-gray-700 overflow-hidden border-4 border-gray-800'>
-                {/* Placeholder for profile image - replace with your image */}
-                <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-700 to-gray-800">
-                  <img src={HeroImg} alt="Hero Image" className="w-full h-full object-cover" />
-                </div>
-              </div>
-            </div>
+                  <img src={HeroImg} alt="Hero Image" className="w-[100%] h-110 object-cover absolute -top-30 left-4 rounded-b-4xl " />
+            {/* <div className='rounded-full p-1 bg-gradient-to-br from-sky-500 to-purple-600'>
+
+            </div> */}
+              {/* <div className='w-full h-full rounded-full bg-gray-700 overflow-hidden border-4 border-gray-800'>
+
+              </div> */}
+                {/* <div className="w-100 h-80 flex items-center justify-center bg-gradient-to-br from-gray-700 to-gray-800">
+
+                </div> */}
             
             {/* Decorative elements */}
             <motion.div 
